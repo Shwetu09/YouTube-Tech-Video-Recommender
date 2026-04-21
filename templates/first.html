@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Performance Prediction AI Engine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fab fa-youtube me-2 text-danger fs-3"></i>
+                <span class="fw-bold">YouTube <span class="text-danger">AI Predictor</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#search">Search</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-5">
+        <!-- Hero Section -->
+        <section class="hero-section py-5 mt-5">
+            <div class="container py-4">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold mb-4">Find the Best Computer Science Videos on YouTube</h1>
+                        <p class="lead mb-4">Our AI analyzes thousands of educational videos to recommend the most engaging and effective content for your learning needs.</p>
+                        <a href="#search" class="btn btn-danger btn-lg px-4">Try It Now <i class="fas fa-arrow-down ms-2"></i></a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube Analytics" class="img-fluid float-animation">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section id="search" class="py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <h2 class="text-center mb-4">Find Top Educational Videos</h2>
+                                <form method="POST" action="/recommend">
+                                    <div class="mb-3">
+                                        <input type="text" name="keyword" class="form-control" placeholder="Enter topic like Python, ML, SQL..." required>
+                                    </div>
+                                    <button type="submit" class="btn btn-danger" style="justify-content: center;">Get Recommendation</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">How Our AI Recommendation System Works</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm hover-effect">
+                            <div class="card-body text-center p-4">
+                                <div class="icon-circle bg-danger text-white mb-4 mx-auto">
+                                    <i class="fas fa-search fs-4"></i>
+                                </div>
+                                <h3 class="h5">1. Search Your Topic</h3>
+                                <p class="text-muted">Enter any computer science topic you want to learn about, from algorithms to web development.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm hover-effect">
+                            <div class="card-body text-center p-4">
+                                <div class="icon-circle bg-danger text-white mb-4 mx-auto">
+                                    <i class="fas fa-brain fs-4"></i>
+                                </div>
+                                <h3 class="h5">2. AI Analysis</h3>
+                                <p class="text-muted">Our machine learning model evaluates video quality based on engagement, content, and channel reputation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm hover-effect">
+                            <div class="card-body text-center p-4">
+                                <div class="icon-circle bg-danger text-white mb-4 mx-auto">
+                                    <i class="fas fa-list-ol fs-4"></i>
+                                </div>
+                                <h3 class="h5">3. Get Recommendations</h3>
+                                <p class="text-muted">Receive a curated list of the best educational videos ranked by predicted learning effectiveness.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2881/2881142.png" alt="About our AI" class="img-fluid rounded">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="mb-4">About Our AI Engine</h2>
+                        <p class="lead">Helping students cut through the noise to find truly valuable educational content.</p>
+                        <p>With over 500 hours of video uploaded to YouTube every minute, finding high-quality computer science tutorials can be overwhelming. Our AI solution analyzes multiple factors to surface the best educational content.</p>
+                        <div class="d-flex mt-4">
+                            <div class="me-4">
+                                <h3 class="text-danger">10K+</h3>
+                                <p class="text-muted mb-0">Videos Analyzed</p>
+                            </div>
+                            <div class="me-4">
+                                <h3 class="text-danger">95%</h3>
+                                <p class="text-muted mb-0">Accuracy Rate</p>
+                            </div>
+                            <div>
+                                <h3 class="text-danger">24/7</h3>
+                                <p class="text-muted mb-0">Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">YouTube AI Predictor</h5>
+                    <p>Using machine learning to help students find the best educational content on YouTube.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#search" class="text-white text-decoration-none">Search</a></li>
+                        <li class="mb-2"><a href="#how-it-works" class="text-white text-decoration-none">How It Works</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle -->
+   
+   
+</body>
+<script src="/static/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</html>
